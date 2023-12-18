@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/png" href="/static/icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'Vogue';
+            src: url('/static/Vogue.ttf') format('truetype');
+            /* Specify other font formats (woff, woff2, etc.) for better compatibility */
+        }
+
+        @font-face {
+            font-family: 'Franie Test Hair';
+            src: url('/static/FVT.otf') format('opentype');
+            /* Specify other font formats (woff, woff2, etc.) for better compatibility */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f9ec;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* h6 {
+            color: #1b1212;
+            text-align: center;
+            margin-top: 40px;
+            font-family: "Vogue";
+            font-size: 50px;
+        }
+
+        /* Styling for the paragraph tag */
+        /* p {
+            color: black;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+            font-family: "Franie Test Hair";
+            font-weight: bolder;
+        } */
+
+        .socials {
+            font-size: 20px;
+            color: #1b1212;
+            margin-top: -5%;
+        }
+
+        .icon-link i {
+            font-size: 34px;
+            padding: 1%;
+            color: #1b1212;
+
+        }
+
+        .socials a {
+            color: #1b1212;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+        }
+
+        .socials a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #1b1212;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+
+            color: black;
+        }
+
+        .socials a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .icon-link:hover {
+            color: aliceblue;
+        }
+
+        .quotes {
+            font-size: 50px;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <center>
+        <header class="text-gray-600 body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg> -->
+                    <img src="/static/boo.svg" alt="Personal Icon" class="w-10 h-10 rounded-full">
+
+                    <span class="ml-3 text-xl">BookBud</span>
+                </a>
+                <nav
+                    class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+                    <a class="mr-5 hover:text-gray-900" href="home.html"> Home</a>
+                    <a class="mr-5 hover:text-gray-900" href="recommend.html">Recommend</a>
+                    <a class="mr-5 hover:text-gray-900" href="books.html">Books</a>
+                    <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
+                </nav>
+
+            </div>
+        </header>
+        <br /> <br />
+
+        
+
+
+        <!-- <h6 class="tag-line text-5xl" >WHO AM I ?</h6> -->
+        <!-- <p>Hello, I'm Vedant, a recent BSc IT graduate with a profound passion for Python programming and the
+            fascinating realm of machine learning. I find immense joy in leveraging Python's versatility to delve into
+            the world of data analysis, artificial intelligence, and beyond. Collaborating with others on innovative
+            projects excites me, as I believe in the power of teamwork and shared knowledge to achieve remarkable
+            outcomes. Presently, I'm actively seeking opportunities to further apply and expand my skills in the dynamic
+            field of technology.
+
+        </p> -->
+
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="inline-block w-8 h-8 text-lime-400 mb-8" viewBox="0 0 975.036 975.036">
+                        <path
+                            d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                        </path>
+                    </svg>
+                    <p class="leading-relaxed text-lg">Hello, I'm Vedant, a recent BSc IT graduate with a profound
+                        passion for Python programming and the
+                        fascinating realm of machine learning. I find immense joy in leveraging Python's versatility to
+                        delve into
+                        the world of data analysis, artificial intelligence, and beyond. Collaborating with others on
+                        innovative
+                        projects excites me, as I believe in the power of teamwork and shared knowledge to achieve
+                        remarkable
+                        outcomes. Presently, I'm actively seeking opportunities to further apply and expand my skills in
+                        the dynamic
+                        field of technology.</p>
+                    <span class="inline-block h-1 w-10 rounded bg-lime-500 mt-8 mb-6"></span>
+                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">VEDANT KADAM</h2>
+                    <p class="text-gray-500">testerved52@gmail.com</p>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="socials">
+            <!-- <a href="testerved52@gmail.com">testerved52@gmail.com</a>
+            <br /> <br /> -->
+            <div class="social-icons">
+                <a href="https://github.com/VedKadam" target="_blank" class="icon-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/vedkadam05/" target="" class="icon-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <br />
+        
+    </center>
+
+</body>
+
+</html>
